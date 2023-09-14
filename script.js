@@ -5,6 +5,8 @@ placeholder = wrapper.querySelector(".placeholder"),
 counter = wrapper.querySelector(".counter"),
 button = wrapper.querySelector("button");
 
+
+//* Fjerner "Whats Happening?" efter man trykker
 editableInput.onfocus = ()=>{
   placeholder.style.color = "#c5ccd3";
 }
@@ -22,6 +24,7 @@ editableInput.onkeypress = (e)=>{
   placeholder.style.display = "none";
 }
 
+//* Function for counteren
 function validated(element){
   let text;
   let maxLength = 255;
