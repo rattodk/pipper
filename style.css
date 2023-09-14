@@ -11,8 +11,12 @@
   margin-left: 20px;
 }
   .nav {
-
-      /* padding-top: 60px; Place content 60px from the top */
+    border-right: 1px solid #999;
+    height: 100%;
+    position: sticky;
+    top: 10%;
+    z-index: 999;
+    width: 25%;
   }
   
   .nav a {
@@ -22,9 +26,13 @@
       text-decoration: none;
       color: #fff;
       font-size: 1.5rem;
+      width: 200px;
   }
   .nav a:hover {
   text-decoration: underline #888;
+  }
+  .search, input placeholder {
+    color: #fff!important;
   }
 
 
@@ -136,7 +144,7 @@ body.dark {
     position: absolute;
     margin-top: -3px;
     font-size: 22px;
-    color: #98A5B1;
+    color: #c2bfbf!important;
     pointer-events: none;
   }
   .tweet-area .input{
