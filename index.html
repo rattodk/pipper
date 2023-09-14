@@ -25,18 +25,18 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           
-            <form class="d-flex" role="search">
+            <form class="d-flex search-box" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success search" type="submit">Search</button>
+              <button class="btn btn-outline-success search" type="submit"><i class="fa-solid fa-magnifying-glass top-search"></i></button>
             </form>
           </div>
 
-          <div class="toggle ms-2">
+          <!-- <div class="toggle ms-2">
 
             <i class="bi bi-moon"></i>
             <i class="bi bi-brightness-high-fill"></i>
     
-          </div>
+          </div> -->
 
       </nav>
 
@@ -46,9 +46,9 @@
 
         <div class="row">
 
-            <div class="col links">
+            <div class="col links pt-">
 
-                <nav id="nav" class="nav position-fixed d-block text-start"> 
+                <nav id="nav" class="nav position-fixed d-block text-start fw-lighter fs-6"> 
 
                     <a href="#" style="padding-bottom: 15px;"><i class="fa-solid fa-house" style="color: #ffffff; padding-right: 10px; width: 3rem;"></i><span>Home</span></a>
                     <a href="#" style="padding-bottom: 15px;"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff; padding-right: 10px; width: 3rem;"></i><span>Explore</span></a>
@@ -63,16 +63,26 @@
         
                     <button id="myBTN" class="button">
         
-                        <span class="span">Post</span>
+                        <span class="span fw-bold" style="font-size: 1rem;">Post</span>
         
                     </button>
+
+                    <div class="profile d-flex mt-4">
+
+                      <img src="./img/casper.jpeg" class="img-fluid" alt="..." style="width: 50px; height: 50px; border-radius: 50%; margin-top: 10px;">
+                      
+                      <div class="profile-username d-block">
+                        <p class="mt-3 ps-2" style="font-size: 14px;">Casper Pedersen</p>
+                        <p class="ps-1" style="margin-top: -15px; font-size: 14px; color: #555">@CasperPedersen_</p>
+                      </div>
+                    </div>
         
                 </nav>
 
             </div>
 
 
-            <div class="col text-start">
+            <div class="col text-start center-col">
 
               <div class="wrapper">
                 <div class="input-box">
@@ -289,6 +299,96 @@
 
 
             <div class="col">
+
+              <div class="card text-start right-boxes subscribe-premium mt-4">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-4">Subscribe to Premium</h5>
+                  <p class="card-text fw-semibold">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
+                  <a href="#" class="btn btn-primary subscribe-button fw-bold">Subscribe</a>
+                </div>
+              </div>
+
+
+              <div class="card text-start right-boxes mt-3 who-to-follow">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-4">Who to follow</h5>
+                </div>
+                <p class="ps-3 who-to-follow-users fw-semibold"><a class="who-to-follow-username" href=""><img src="./img/casper.jpeg" alt=""><span class="">Casper</span><span class="who-to-follow-button jaja">Follow</span></a></p>
+                <p class="ps-3 who-to-follow-users fw-semibold"><a class="who-to-follow-username" href=""><img src="./img/rasmus.jpeg" alt=""><span class="">Rasmus</span><span class="who-to-follow-button">Follow</span></a></p>
+                <p class="ps-3 who-to-follow-users fw-semibold"><a class="who-to-follow-username" href=""><img src="./img/frederik.jpeg" alt=""><span class="">Frederik</span><span class="who-to-follow-button">Follow</span></a></p>
+                <div class="card-body">
+                  <a href="#" class="card-link fw-light show-more-button">Show more</a>
+                </div>
+              </div>
+
+
+              <div class="card text-start right-boxes mt-3 trending-box">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-4 pb-3">Denmark trends</h5>
+
+                <div class="trending-topic">
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 0px!important; color: #555">1 &#x2022; Sports &#x2022; Trending</p>
+                  <p class="card-text fw-bold" style="margin-bottom: 0px!important;">Kuss</p>
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 30px!important; color: #555">Trending with <span style="color: var(--twitter-farve);">Sepp</span></p>
+                </div>
+
+                <div class="trending-topic">
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 0px!important; color: #555">2 &#x2022; Sports &#x2022; Trending</p>
+                  <p class="card-text fw-bold" style="margin-bottom: 0px!important;">Roglic</p>
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 30px!important; color: #555">12.9k posts</p>
+                </div>
+
+                <div class="trending-topic">
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 0px!important; color: #555">3 &#x2022; Team Jumbo-Visma &#x2022; Trending</p>
+                  <p class="card-text fw-bold" style="margin-bottom: 0px!important;">Vingegaard</p>
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 30px!important; color: #555">11k posts</p>
+                </div>
+
+                <div class="trending-topic">
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 0px!important; color: #555">4 &#x2022; Trending</p>
+                  <p class="card-text fw-bold" style="margin-bottom: 0px!important;">#LaVuelta23 <img src="https://abs.twimg.com/hashflags/La_Vuelta_2023/La_Vuelta_2023.png" style="width: 18px; height: 18px;" alt=""></p>
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 30px!important; color: #555">26.6k posts</p>
+                </div>
+
+                <div class="trending-topic">
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 0px!important; color: #555">5 &#x2022; Trending</p>
+                  <p class="card-text fw-bold" style="margin-bottom: 0px!important;">#dkgreen</p>
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 30px!important; color: #555"></p>
+                </div>
+
+                <div class="trending-topic">
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 0px!important; color: #555">6 &#x2022;  Sports &#x2022; Trending</p>
+                  <p class="card-text fw-bold" style="margin-bottom: 0px!important;">Jumbo</p>
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 30px!important; color: #555">16.5k posts</p>
+                </div>
+
+                <div class="trending-topic">
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 0px!important; color: #555">7 &#x2022;  Gaming &#x2022; Trending</p>
+                  <p class="card-text fw-bold" style="margin-bottom: 0px!important;">Unity</p>
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 30px!important; color: #555">321k posts</p>
+                </div>
+
+                <div class="trending-topic">
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 0px!important; color: #555">8 &#x2022;  Politics &#x2022; Trending</p>
+                  <p class="card-text fw-bold" style="margin-bottom: 0px!important;">#SOTEU</p>
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 30px!important; color: #555">18.2k posts</p>
+                </div>
+
+                <div class="trending-topic">
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 0px!important; color: #555">9 &#x2022; Trending</p>
+                  <p class="card-text fw-bold" style="margin-bottom: 0px!important;">#AMOO</p>
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 30px!important; color: #555">6,299 posts</p>
+                </div>
+
+                <div class="trending-topic">
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 0px!important; color: #555">10 &#x2022; Trending</p>
+                  <p class="card-text fw-bold" style="margin-bottom: 0px!important;">#eudk</p>
+                  <p class="card-text fw-lighter" style="font-size: 12px; margin-bottom: 30px!important; color: #555"></p>
+                </div>
+
+                  <a href="#" class="card-link fw-light show-more-button">Show more</a>
+                </div>
+              </div>
 
 
 
