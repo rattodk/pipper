@@ -1,17 +1,31 @@
 <?php
     require ".env";
 
+    echo "Hello World";
 
-
-    $servername = 'localhost';
-    $username = 'root';
-    $password = getenv('PASSWORD');
-    try {
-        $conn = new PDO('mysql:host=$servername;dbname=pipper', $username, $password);
-
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo 'Connected successfully';
-    } catch (PDOException $e) {
-    echo 'Connection failed:' . $e->getMessage();
+    function allowedToVote(String $firstname, String $lastname, int $age) {
+        if ($age > 17) {
+            echo $firstname . ' ' . $lastname . ' is allowed to vote';
+        } else {
+            $yearsBeforeVote = 18 - $age;
+            if ($yearsBeforeVote == 1) {
+                echo 'You are not allowed to vote yet! Wait for ' . $yearsBeforeVote . ' year' ;    
+            } else {
+                echo 'You are not allowed to vote yet! Wait for ' . $yearsBeforeVote . ' years' ;
+            }
+        }
     }
+
+    allowedToVote('Christian', 'Kirschberg', 16);
+    
+    for ($x = 0; $x <= 10; $x++) {
+        echo "The number is: $x <br>";
+    }
+
+
+    $password = getenv('PASSWORD');
+    echo $password;
+
+    
+
 ?>
